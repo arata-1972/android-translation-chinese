@@ -27,11 +27,18 @@ var api = new ParseServer({
 	      senderId: '421475043173',
 	      apiKey: 'AAAAYiHex2U:APA91bGINas3MA5j6oHplNTSKRX0KWzrR2Wc5n6InWp2yiq0wSWgAMks8jD88IzBOgfoS-X9LYn67ymgIjFQ2MvNg0cvEbrCvVfJRJJ-9RoCx8cnpnI2vbWEsvxgxWOCspi9jirYYNUevshHdJobCbZMsSyYdLiLFw'
 	    },
-	    ios: {
-	      pfx:  __dirname + '/iPhoneP12/com.arata1972.night.market.store.p12', // 與 index.js 目錄同層
-	      bundleId: 'com.arata1972.night.market', // 填入先前填的 Bundle ID
-	      production: true // false: development, true: production
-	    }
+	   ios:[
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.japan.matsukiyo store store.p12',
+	        bundleId: 'com.arata1972.japan.matsukiyo store',
+	        production: true
+	      },
+	      {
+	        pfx: __dirname + '/iPhoneP12/com.satoshogoArabicIndoneian store.p12', 
+	        bundleId: 'com.satoshogoArabicIndoneian',  
+	        production: true
+	      }
+	       ]
 	  }
 	});
 
