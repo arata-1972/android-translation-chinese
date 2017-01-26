@@ -29,13 +29,18 @@ var api = new ParseServer({
 	    },
 	   ios:[
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.japan.matsukiyo store store.p12',
-	        bundleId: 'com.arata1972.japan.matsukiyo store',
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.japan.matsukiyo store.p12',
+	        bundleId: 'com.arata1972.japan.matsukiyo',
+	        production: true
+	      },
+		   {
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.spa-taiwan store.p12',
+	        bundleId: 'com.arata1972.spa-taiwan',
 	        production: true
 	      },
 	      {
-	        pfx: __dirname + '/iPhoneP12/com.satoshogoArabicIndoneian store.p12', 
-	        bundleId: 'com.satoshogoArabicIndoneian',  
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.DIN.THI.FUNG store.p12', 
+	        bundleId: 'com.arata1972.DIN.THI.FUNG',  
 	        production: true
 	      }
 	       ]
