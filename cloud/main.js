@@ -9,7 +9,7 @@ Parse.Cloud.define('hello', function(req, res) {
 
 
 Parse.Cloud.define('hello', function(req, res) {
-  res.success('4');
+  res.success('3');
 });
 
 
