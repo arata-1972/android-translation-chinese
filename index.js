@@ -38,8 +38,18 @@ var api = new ParseServer({
 	        bundleId: 'com.arata1972.spa-taiwan',
 	        production: true
 	      },
-		   {//com.arata1972.Convenience
+		   {
 	        pfx: __dirname + '/iPhoneP12/com.arata1972.Convenience store.p12',
+	        bundleId: 'com.arata1972.Convenience',
+	        production: true
+	      },
+		    {
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.night.market.Hong-Kong store.p12',
+	        bundleId: 'com.arata1972.Convenience',
+	        production: true
+	      },
+		    {//com.arata1972.Sightseeing.Hong-Kong store.p12
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.Sightseeing.Hong-Kong store.p12',
 	        bundleId: 'com.arata1972.Convenience',
 	        production: true
 	      },
