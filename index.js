@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-	  databaseURI: databaseUri || 'mongodb://heroku_mzh9z7fj:2biadrg17pg08u1e1p1qvqa7jt@ds023432.mlab.com:23432/heroku_mzh9z7fj',
+	  databaseURI: databaseUri || 'mongodb://heroku_8268jp6m:f4k7jpsvsq38mhapf9aa1lk6vr@ds033126.mlab.com:33126/heroku_8268jp6m',
 	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-	  appId: process.env.APP_ID || 'PJGh686wADXdRboLLmbkER0V4D95wlLVatRJXUl0',
-	  masterKey: process.env.MASTER_KEY || '4t5Y7WU5lShBRzNz4SeT1gbXxqfABGRvH0T8bL3c', //Add your master key here. Keep it secret!
-	  serverURL: process.env.SERVER_URL || 'https://night-market--taiwan.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  appId: process.env.APP_ID || 'shvMD3XLAOsdGYit23qkoZNWXLJsHcTfWpD4gccr',
+	  masterKey: process.env.MASTER_KEY || 'm0XSqNuFhcfaclKmoYLH9kRb5LzE9dYWxZkTEQmf', //Add your master key here. Keep it secret!
+	  serverURL: process.env.SERVER_URL || 'https://din-tai-fung-app.herokuapp.com/parse',  // Don't forget to change to https if needed
 	  liveQuery: {
 	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 	  },
@@ -45,12 +45,17 @@ var api = new ParseServer({
 	      },
 		    {
 	        pfx: __dirname + '/iPhoneP12/com.arata1972.night.market.Hong-Kong store.p12',
-	        bundleId: 'com.arata1972.Convenience',
+	        bundleId: 'com.arata1972.night.market.Hong-Kong',
 	        production: true
 	      },
-		    {//com.arata1972.Sightseeing.Hong-Kong store.p12
+		{
 	        pfx: __dirname + '/iPhoneP12/com.arata1972.Sightseeing.Hong-Kong store.p12',
-	        bundleId: 'com.arata1972.Convenience',
+	        bundleId: 'com.arata1972.Sightseeing.Hong-Kong',
+	        production: true
+	      },
+		   {//com.arata1972.DQ-japan store
+	        pfx: __dirname + '/iPhoneP12/com.arata1972.DQ-japan store.p12',
+	        bundleId: 'com.arata1972.DQ-japan',
 	        production: true
 	      },
 	      {
