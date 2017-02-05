@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-	  databaseURI: databaseUri || 'mongodb://heroku_8268jp6m:f4k7jpsvsq38mhapf9aa1lk6vr@ds033126.mlab.com:33126/heroku_8268jp6m',
+	  databaseURI: databaseUri || 'mongodb://heroku_2xvb7vrb:lsnrqhomi80uom7coiv8et5htm@ds143449.mlab.com:43449/heroku_2xvb7vrb',
 	  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
 	  appId: process.env.APP_ID || 'shvMD3XLAOsdGYit23qkoZNWXLJsHcTfWpD4gccr',
 	  masterKey: process.env.MASTER_KEY || 'm0XSqNuFhcfaclKmoYLH9kRb5LzE9dYWxZkTEQmf', //Add your master key here. Keep it secret!
-	  serverURL: process.env.SERVER_URL || 'https://din-tai-fung-app.herokuapp.com/parse',  // Don't forget to change to https if needed
+	  serverURL: process.env.SERVER_URL || 'https://android-translation-chinese.herokuapp.com/parse',  // Don't forget to change to https if needed
 	  liveQuery: {
 	    classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
 	  },
@@ -24,45 +24,15 @@ var api = new ParseServer({
 	  push: {
 	    // 此篇未提到 Android，因此註解掉
 	    android: {
-	      senderId: '421475043173',
-	      apiKey: 'AAAAYiHex2U:APA91bGINas3MA5j6oHplNTSKRX0KWzrR2Wc5n6InWp2yiq0wSWgAMks8jD88IzBOgfoS-X9LYn67ymgIjFQ2MvNg0cvEbrCvVfJRJJ-9RoCx8cnpnI2vbWEsvxgxWOCspi9jirYYNUevshHdJobCbZMsSyYdLiLFw'
+	      senderId: '409981181490',
+	      apiKey: 'AAAAX3TIXjI:APA91bG-WSLql7olw8ChK1mkPv5_lxlv0yw5XrbwhSLOY0Iyql6Gq82oiWHdQDZf_8Dks0NVAHXfRTan3NPaPRnjC9KtGO6ZCxMYZbFpXjHTwMBsm2kAxB-N7C3oqqF3-X6MEFade1Jv'
 	    },
 	   ios:[
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.japan.matsukiyo store.p12',
-	        bundleId: 'com.arata1972.japan.matsukiyo',
-	        production: true
-	      },
-		   {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.spa-taiwan store.p12',
-	        bundleId: 'com.arata1972.spa-taiwan',
-	        production: true
-	      },
-		   {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.Convenience store.p12',
-	        bundleId: 'com.arata1972.Convenience',
-	        production: true
-	      },
-		    {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.night.market.Hong-Kong store.p12',
-	        bundleId: 'com.arata1972.night.market.Hong-Kong',
-	        production: true
-	      },
-		{
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.Sightseeing.Hong-Kong store.p12',
-	        bundleId: 'com.arata1972.Sightseeing.Hong-Kong',
-	        production: true
-	      },
-		   {//com.arata1972.DQ-japan store
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.DQ-japan store.p12',
-	        bundleId: 'com.arata1972.DQ-japan',
-	        production: true
-	      },
-	      {
-	        pfx: __dirname + '/iPhoneP12/com.arata1972.DIN.THI.FUNG store.p12', 
-	        bundleId: 'com.arata1972.DIN.THI.FUNG',  
-	        production: true
-	      }
+// 	     {
+// 	        pfx: __dirname + '/iPhoneP12/com.arata1972.DIN.THI.FUNG store.p12', 
+// 	        bundleId: 'com.arata1972.DIN.THI.FUNG',  
+// 	        production: true
+// 	      }
 	       ]
 	  }
 	});
